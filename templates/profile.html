@@ -1,0 +1,25 @@
+{% extends 'profilebase.html' %}
+
+{% block title %}
+	HolaCakes|profile
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 mt-5" >
+				<div class="col-md-12"><p><img src="{{url_for('static', filename='images/profile.png')}}" class="img-fluid rounded-circle"></p>
+				</div>
+				<div class="col-md-12"><p class="orderstyle" id='profile'><i class="fa fa-user-plus"></i> Profile</p>
+				</div>
+				<div class="col-md-12"><p class="orderstyle" id="Orders"><i class="fa fa-cart-shopping"></i> Orders</p>
+				</div>
+				<div class="col-md-12"><p class="orderstyle" id="orderdetail"><i class="fa fa-arrow-down-a-z"></i> Order Details</p>
+				</div>
+				<div class="col-md-12"><p class="orderstyle" id="payment"><i class="fa fa-credit-card"></i> Payemnt History</p>
+				</div>
+			</div>
+			<div class="col-md-10" id="display"></div>
+		</div>
+	</div>
+{% endblock %}

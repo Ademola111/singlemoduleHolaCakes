@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    HolaCakes|Product|Birthday cake
+{% endblock %}
+
+{% block content %}
+<h3 class="mt-2">Birthday Cakes</h3>
+<div class="row mt-5 mb-5">
+    <div class="col-md-3 ">
+        <div class="card" style="width: 18rem;">
+          <a href="{{url_for('product')}}"><img src="{{url_for('static', filename='images/birthdaycake.png')}}" class="card-img-top" alt="birthday cake"></a>
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="{{url_for('product')}}" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake2.png')}}" class="card-img-top" alt="...">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake3.jpg')}}" class="card-img-top" alt="...">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake4.jpg')}}" class="card-img-top" alt="birthday cake">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-5 mb-5">
+    <div class="col-md-3 ">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake.png')}}" class="card-img-top" alt="birthday cake">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake2.png')}}" class="card-img-top" alt="...">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake3.jpg')}}" class="card-img-top" alt="...">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{{url_for('static', filename='images/birthdaycake4.jpg')}}" class="card-img-top" alt="birthday cake">
+          <div class="card-body text-light" style="background-color: black;">
+            <h6 class="card-title">Birthday cake</h6>
+            <p class="card-text">Description</p>
+            <p class="card-text">Price: N10,000.00</p>
+            <a href="#" class="buy">Buy</a>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

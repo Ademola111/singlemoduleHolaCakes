@@ -1,0 +1,42 @@
+{% extends 'adminbase.html' %}
+
+{% block title %}
+    HolaCakes|Admin|Product|Categories
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-end mt-2">
+            <a href="{{url_for('admin_dashboard')}}"><button class="mb-3 btn btn-dark">Return To Dashboard</button>  </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col mt-3">
+                        <label>Product Name</label>
+                        <input type="text" id="addcategory" name="addcategory" class="form-control" placeholder="Product name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <label>Image</label>
+                        <input type="file" id="myFile" name="filename" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <button class="btn btn-dark form-control">Add Categories</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <h1 class="text-center">List of Product Categories</h1>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

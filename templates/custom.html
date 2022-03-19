@@ -1,0 +1,93 @@
+{% extends 'profilebase.html' %}
+
+{% block title %}
+    HolaCakes|order
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 mt-5">
+            <img src="{{url_for('static', filename='images/wed4.png')}}" class="card-img-top" alt="birthday cake">
+        </div>
+        <div class="col-md-8">
+            <form  class="row g-3 align-item-start " action="" methods="POST">
+                <div class="col formwrap bg-light mt-5">
+                <h3>Order for desired specification</h3>
+                <span style="color:red"><srong><em>Note!:</em> Product requires 3 days pre-order notice.</srong></span>
+                <div>
+                    <div class="col-12 mb-3">
+                        <select class="form-select form-select-lg mb-3 anim" aria-label=".form-select-lg example">
+                              <option selected>Cake Name</option>
+                              <option value="wedding cake">Birthday Cake</option>
+                              <option value="wedding cake">Wedding Cake</option>
+                              <option value="baby shower cake">Baby Shower Cake</option>
+                              <option value="bridal shower cake">Bridal Shower Cake</option>
+                              <option value="valentine cake">Valentine Cakes</option>
+                              <option value="christmas/eid cake">Christmas/Eid Cake</option>
+                              <option value="easter cake">Easter Cake</option>
+                              <option value="ramadan cake">Ramadan Kareem</option>
+                              <option value="house warming cake">House warming Cakes</option>
+                              <option value="new year/hijirah cake">New Year/Hijirah Cake</option>
+                              <option value="independent cake">Independent Cakes</option>
+                              <option value="profession/career cake">Profession/Career Cake</option>
+                        </select> 
+                    </div>
+                </div>
+                    <div>
+                        <div class="col-12 mb-3">
+                            <select class="form-select form-select-lg mb-3 anim" aria-label=".form-select-lg example">
+                                  <option selected>Cake Size</option>
+                                  <option value="5">5"</option>
+                                  <option value="6" >6"</option>
+                                  <option value="7">7"</option>
+                                  <option value="8">8"</option>
+                                  <option value="9">9"</option>
+                                  <option value="10">10"</option>
+                                  <option value="11">11"</option>
+                                  <option value="12">12"</option>
+                                  <option value="13">13"</option>
+                                  <option value="14">14"</option>
+                                  <option value="15">15"</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-12 mb-3">
+                            <select class="form-select form-select-lg mb-3 anim" aria-label=".form-select-lg example">
+                                  <option selected>Cake Flavour</option>
+                                  <option value="fundant">Fundant</option>
+                                  <option value="chocolate" >Chocolate</option>
+                                  <option value="strawberry">Strawberry</option>
+                                  <option value="butter icing">Butter Icing</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 mt-3">
+                            <label for="custom" class="form-check-label anim">Cake Message</label>
+                            <input class="form-control anim" type="text" name="name" placeholder="Cake Message" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="custom" class="form-check-label anim">Description</label><br>
+                        <textarea cols="80" rows="10"></textarea>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 mt-3">
+                            <input class="form-check-input anim" type="radio" name="custom" value="custom" id="custom" checked>
+                            <label for="custom" class="form-check-label anim">Custom Order</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-success anim" id="btn">Submit Order</button>
+                    </div>
+                </div>
+            </form>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

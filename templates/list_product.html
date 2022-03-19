@@ -1,0 +1,82 @@
+{% extends 'adminbase2.html' %}
+
+{% block title%}
+    HolaCakes|Products
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-end mt-2">
+            <a href="{{url_for('admin_dashboard')}}"><button class="mb-3 btn btn-dark">Return To Dashboard</button>  </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <input type="text" id="productname" name="productname" class="form-control" placeholder="Product name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <input type="text" id="producttype" name="producttype" class="form-control" placeholder="Product Type">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <input type="text" id="productno" name="productno" class="form-control" placeholder="Product Number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <select name="ordertype" class="form-control">
+                            <option>choose order type</option>
+                            <option value="normal">Normal</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <select name="ordertype" class="form-control">
+                            <option>choose product Size</option>
+                            <option value="5">5 Inches</option>
+                            <option value="8">8 Inches</option>
+                            <option value="10">10 Inches</option>
+                            <option value="12">12 Inches</option>
+                            <option value="14">14 Inches</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <textarea id="description" name="description" class="form-control" cols="50" rows="10" placeholder="Describe your cake here"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        
+                        <input type="text" id="productprice" name="productprice" class="form-control" placeholder="Product Price">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-3">
+                        <button class="btn btn-dark form-control">Add Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-9">
+            <h1 class="text-center">List of Product</h1>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

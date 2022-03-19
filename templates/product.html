@@ -1,0 +1,36 @@
+{% extends 'profilebase.html' %}
+
+{% block title %}
+    HolaCakes|Cakes
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 mt-5">
+            <img src="{{url_for('static', filename='images/wed4.png')}}" class="card-img-top img-fluid" alt="birthday cake">
+        </div>
+        <div class="col-md-10 mt-5">
+            <div>
+                <p>Name: </p>
+                <p>Description: </p>
+                <p>Price: </p>
+                <button class="btn btn-dark" onclick="decrement()">-</button>
+                <input id=demoInput type=number min="1">
+                <button class="btn btn-success" onclick="increment()">+</button>
+                <a href="{{url_for('cart')}}"><button type="button" class="btn btn-warning" id="add">ADD TO CART</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--reviews-->
+    <div class="row">
+        <div class="col-md-12 mt-5" id="comment">
+            <h4>Reviews</h4>
+            <textarea id="test" cols=80 rows=10></textarea><br>
+            <button class="btn btn-outline-success mt-2" id="disi5">Post a Review</button>
+        </div>
+        <div id="comment" style="min-height:50px"></div>
+    </div>
+</div>
+{% endblock %}

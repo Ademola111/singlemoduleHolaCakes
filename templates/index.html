@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% block title%}
+	HolaCakes
+{% endblock %}
+
+{% block content %}
+	<!-- carosel -->
+	<div class="row">
+		<div class="col">
+			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				  <div class="carousel-inner" style="z-index:0">
+				    <div class="carousel-item active">
+				      <img src="{{url_for('static', filename='images/background480.jpg')}}" class="d-block w-100 img-fluid" alt="val">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{url_for('static', filename='images/background.png')}}" class="d-block w-100 img-fluid" alt="val">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{url_for('static', filename='images/background480.jpg')}}" class="d-block w-100 img-fluid" alt="val">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="{{url_for('static', filename='images/background.png')}}" class="d-block w-100 img-fluid" alt="val">
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+			</div>
+		</div>
+	</div>
+	<!-- carosel ends-->
+	
+	<!-- our products-->
+	<div class="container-fluid mb-5">
+	<div class="row">
+		<div class="row mt-5 mb-5">
+			<div class="col-12"><h3>Wedding Cakes</h3></div>
+			<div class="col-md-3">
+				<div class="card" style="width: 18rem;">
+				  <img src="{{url_for('static', filename='images/wed1.png')}}" class="card-img-top img-fluid" alt="wedding cake">
+				  <div class="card-body text-light text-center" style="background-color: black;">
+					<h6 class="card-title">Wedding Cake</h6>
+					<p class="card-text">Description</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 18rem;">
+				  <img src="{{url_for('static', filename='images/wed2.png')}}" class="card-img-top img-fluid" alt="wedding cake">
+				  <div class="card-body text-light text-center" style="background-color: black;">
+					<h6 class="card-title">Wedding Cake</h6>
+					<p class="card-text">Description</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 18rem;">
+				  <img src="{{url_for('static', filename='images/wed3.png')}}" class="card-img-top img-fluid" alt="wedding cake">
+				  <div class="card-body text-light text-center" style="background-color: black;">
+					<h6 class="card-title">Wedding Cake</h6>
+					<p class="card-text">Description</p>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 18rem;">
+				  <img src="{{url_for('static', filename='images/wed4.png')}}" class="card-img-top img-fluid" alt="wedding cake">
+				  <div class="card-body text-light text-center" style="background-color: black;">
+					<h6 class="card-title">Wedding Cake</h6>
+					<p class="card-text">Description</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-12"><h3>Birthday Cakes</h3></div>
+		<div class="col-md-3 ">
+			<div class="card" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/birthdaycake.png')}}" class="card-img-top" alt="birthday cake">
+			  <div class="card-body text-light text-center" style="background-color: black;">
+			    <h6 class="card-title">Birthday cake</h6>
+			    <p class="card-text">Description</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/birthdaycake2.png')}}" class="card-img-top" alt="...">
+			  <div class="card-body text-light text-center" style="background-color: black;">
+			    <h6 class="card-title">Birthday cake</h6>
+			    <p class="card-text">Description</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/birthdaycake3.jpg')}}" class="card-img-top" alt="...">
+			  <div class="card-body text-light text-center" style="background-color: black;">
+			    <h6 class="card-title">Birthday cake</h6>
+			    <p class="card-text">Description</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/birthdaycake4.jpg')}}" class="card-img-top" alt="birthday cake">
+			  <div class="card-body text-light text-center" style="background-color: black;">
+			    <h6 class="card-title">Birthday cake</h6>
+			    <p class="card-text">Description</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--product ends-->
+
+<!--section 1 start-->
+<div class="row mb-5">
+	<div class="row text-center">
+	<div class="offset-md-1 col-md-3">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{url_for('static', filename='images/freshingredent.png')}}" class="card-img-top" alt="freshingredent">
+		  <div class="card-body" style="background-color: black;">
+			<h5 class="card-title">FRESH INGREDENT</h5>
+			<p class="card-text text-light">All of our products are made with the finest quality ingredients and guaranteed fresh.</p>
+		  </div>
+		</div>
+	</div>
+	<div class="offset-md-1 col-md-3">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{url_for('static', filename='images/love.png')}}" class="card-img-top" alt="baked with love">
+		  <div class="card-body" style="background-color: black;">
+			<h5 class="card-title">BAKED WITH LOVE</h5>
+			<p class="card-text text-light">We are passionate about baking. Each of our handmade items are carefully baked with love.</p>
+		  </div>
+		</div>
+	</div>
+	<div class="offset-md-1 col-md-3">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{url_for('static', filename='images/deliver.png')}}" class="card-img-top" alt="delivery">
+		  <div class="card-body" style="background-color: black;">
+			<h5 class="card-title">ON TIME DELIVERY</h5>
+			<p class="card-text text-light">We are very punctual and promise to deliver fresh made products to every customer on time.</p>
+		  </div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- section 1 ends-->
+{% endblock %}
+	

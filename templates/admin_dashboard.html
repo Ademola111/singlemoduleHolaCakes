@@ -1,0 +1,67 @@
+{% extends 'adminbase2.html' %}
+
+{% block title %}
+    HolaCakes|Admin_Dashboard
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 m-2 p-2" id="admindashboardsidebar">
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_product')}}"><i class="fa-brands fa-product-hunt"></i> Products</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_categories')}}"><i class="fa-solid fa-filter"></i>Categories</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_images')}}"><i class="fa-solid fa-image"></i> Product Images</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_user')}}"><i class="fa-solid fa-users"></i> Users</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_orderproduct')}}"><i class="fa-solid fa-arrow-down-short-wide"></i> Order Products</a></strong></p>
+            <p class="admindashboardsidebar"><a href="{{url_for('admin_orderdetail')}}"><strong><i class="fa-solid fa-circle-info"></i> Order Details</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_delivery')}}"><i class="fa-solid fa-truck"></i> Delivery</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_reviews')}}"><i class="fa-solid fa-star"></i> Reviews</a></strong></p>
+            <p class="admindashboardsidebar"><strong><a href="{{url_for('admin_payment')}}"><i class="fa-solid fa-credit-card"></i> Payment</a></strong></p>
+        </div>
+        <div class="col-md-9 mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-3 p-2 mb-2" id="products">
+                    <h4><i class="fa-brands fa-product-hunt"></i> 0 Products</h4>
+                    <a href="{{url_for('admin_product')}}"><button class="btn" id="prodbut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="prodcat">
+                    <h4><i class="fa-solid fa-filter"></i> 0 Categories</h4>
+                    <a href="{{url_for('admin_categories')}}"><button class="btn" id="catbut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="prodImg">
+                    <h4><i class="fa-solid fa-image"></i>0 Products Images</h4>
+                   <a href="{{url_for('admin_images')}}"><button class="btn" id="imgbut">View Details</button></a> 
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-md-3 p-2 mb-2" id="OrderProd">
+                    <h4><i class="fa-solid fa-arrow-down-short-wide"></i> Orders Products</h4>
+                    <a href="{{url_for('admin_orderproduct')}}"><button class="btn" id="ordbut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="orderDtl">
+                    <h4><i class="fa-solid fa-circle-info"></i> Orders Detail</h4>
+                    <a href="{{url_for('admin_orderdetail')}}"><button class="btn" id="orddtlbut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="delivery">
+                    <h4><i class="fa-solid fa-truck"></i> Delivery</h4>
+                    <a href="{{url_for('admin_delivery')}}"><button class="btn" id="deldbut">View Details</button></a>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-md-3 p-2 mb-2" id="payment">
+                    <h4><i class="fa-solid fa-credit-card"></i> 0 Payment</h4>
+                    <a href="{{url_for('admin_payment')}}"><button class="btn" id="paybut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="reviews">
+                    <h4><i class="fa-solid fa-star"></i> 0 Reviews</h4>
+                    <a href="{{url_for('admin_reviews')}}"><button class="btn" id="revbut">View Details</button></a>
+                </div>
+                <div class="col-md-3 p-2 mb-2" id="users">
+                    <h4><i class="fa-solid fa-users"></i> 0 Users</h4>
+                    <a href="{{url_for('admin_user')}}"><button class="btn" id="userbut">View Details</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
